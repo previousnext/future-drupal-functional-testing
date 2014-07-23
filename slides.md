@@ -2,6 +2,8 @@
 
 ---
 
+<link href="./assets/style.css" rel="stylesheet"></link>
+
 ## About the speakers
 
 * **Nick Schuch** (nick_schuch)
