@@ -1,8 +1,10 @@
+<!-- Begin assets -->
+<link href="./assets/style.css" rel="stylesheet"></link>
+<!-- End assets -->
+
 # The Future of Drupal Functional Testing
 
 ---
-
-<link href="./assets/style.css" rel="stylesheet"></link>
 
 ## About the speakers
 
