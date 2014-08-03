@@ -13,23 +13,50 @@
 
 ---
 
-## Second slide
+## Thanks to the community
 
-> Best quote ever.
-
-Note: speaker notes FTW!
+![Austin](./assets/austin.jpg "Austin")
 
 ---
 
-## Say hello to Mink
+## What we have right now
+
+![Fork](./assets/fork.jpg "Fork")
 
 ---
 
-## So how does this help Drupal?
+## Time to get off the island
+
+![Island](./assets/island.jpg "Island")
 
 ---
 
-## Wait how does this help JavaScript testing?
+## Recognise this syntax
+
+```
+Scenario: The content page exists
+  Given I am logged in as a user with the "administrator" role
+  When I go to "admin/content"
+  Then the response status code should be 200
+```
+
+Note: Actually powered by Mink
+
+---
+
+## Mink
+
+![Bricks](./assets/bricks.jpg "Bricks")
+
+---
+
+## Did someone say JavaScript?
+
+![Javascript](./assets/java.jpg "Javascript")
+
+---
+
+## Architecture
 
 ---
 
