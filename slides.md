@@ -99,4 +99,12 @@ Link to patch
 
 ---
 
+## Checkout
+
+* Modernizing testbot: The future of drupal.org automated testing (Wednesday 10:45-11:45)
+* Automated Frontend testing (Wednesday 14:15-15:15)
+* Doing behaviour driven development with behat (Wednesday 15:45-16:45)
+
+---
+
 ## Question time!
