@@ -78,10 +78,6 @@ Picture of a Phantom.
 
 ---
 
-## Architecture
-
----
-
 ## Show me the code
 
 ---
