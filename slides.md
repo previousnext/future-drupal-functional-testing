@@ -19,15 +19,29 @@
 
 ---
 
-## What we have right now
+## The state of Drupal testing
 
 ![Fork](./assets/fork.jpg "Fork")
+
+---
+
+## Time to get smarter about our tests
+
+Unit -> DB -> HTTP -> Functional!!!
+
+Get smart image here.
 
 ---
 
 ## Time to get off the island
 
 ![Island](./assets/island.jpg "Island")
+
+---
+
+## PHPUnit
+
+Picture of a runner
 
 ---
 
@@ -56,8 +70,26 @@ Note: Actually powered by Mink
 
 ---
 
+## PhantomJS
+
+Picture of a Phantom.
+
+## Not a replacement for solid unit testing
+
+---
+
 ## Architecture
 
 ---
 
 ## Show me the code
+
+---
+
+## How do we get this into Drupal 8 core
+
+Link to patch
+
+---
+
+## Question time!
