@@ -8,8 +8,13 @@
 
 ## About the speakers
 
-* **Nick Schuch** (nick_schuch)
-* **Cameron Zemek** (grom358)
+---
+
+## Nick Schuch
+
+---
+
+## Cameron Zemek
 
 ---
 
