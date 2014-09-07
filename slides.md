@@ -30,11 +30,17 @@
 
 ---
 
+## Not a replacement for unit testing
+
+![Unit testing](./assets/unit.jpg "Unit testing")
+
+---
+
 ## Time to get smarter about our tests
 
-Unit -> DB -> HTTP -> Functional!!!
+![Levels](./assets/levels.jpg "Levels")
 
-Get smart image here.
+Unit -> DB -> HTTP -> Functional!!!
 
 ---
 
@@ -46,7 +52,7 @@ Get smart image here.
 
 ## PHPUnit
 
-Picture of a runner
+![Runner](./assets/runner.jpg "Runner")
 
 ---
 
@@ -77,13 +83,13 @@ Note: Actually powered by Mink
 
 ## PhantomJS
 
-Picture of a Phantom.
-
-## Not a replacement for solid unit testing
+![Phantom](./assets/phantom.jpg "Phantom")
 
 ---
 
 ## Show me the code
+
+WE NEED TO WRITE SOME CODE!
 
 ---
 
