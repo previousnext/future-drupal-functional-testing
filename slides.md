@@ -36,7 +36,7 @@ Note:
 ![Fork](./assets/fork.jpg "Fork")
 
 Note:
-* Long ago forked from simpletest
+* Long ago forked from simpletest (Dries committed it on 21/04/2008)
 * Simpletest last release was 23/01/2012
 * Maintainers have to maintain this legacy testing system
 * PHPUnit already adopted for Unit tests
@@ -50,7 +50,16 @@ Note:
 ![Unit testing](./assets/unit.jpg "Unit testing")
 
 Note:
-* 
+* Functional testing is a quality assurance (QA) process and a type of black box testing that bases its test cases on the specifications of the software component under test. Functions are tested by feeding them input and examining the output, and internal program structure is rarely considered (not like in white-box testing). Functional Testing usually describes what the system does.
+* Functional Testing have many types:
+** Smoke Testing - A subset of test cases that cover the most important functionality of a component or system is selected and run, to ascertain if the most crucial functions of a program work correctly.
+** Sanity Testing - The point of a sanity test is to rule out certain classes of obviously false results, not to catch every possible error. The advantage of a sanity test, over performing a complete or rigorous test, is speed.
+** Regression Testing - is a type of software testing that seeks to uncover new software bugs, or regressions, in existing functional and non-functional areas of a system after changes such as enhancements, patches or configuration changes, have been made to them.
+** Usability Testing
+* Higher level then unit testing, not dealing with API layer of modules. Working from exposed web interface.
+* https://www.drupal.org/node/394888
+* Tests are written in such a way that they test the interface as a whole instead of testing individual functions or finite pieces of code.
+* Drupal is installed into that environment and the tests are performed. What this means is that the tests always start from the same environment and there is no chance for contamination from other tests. When you write your test it means that you do not have to clean up the environment at the end of each test.
 
 ---
 
