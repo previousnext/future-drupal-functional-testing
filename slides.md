@@ -16,11 +16,18 @@
 
 ## Cameron Zemek
 
+* PHP developer for 10 years
+* Drupal/Twitter: grom358
+
 ---
 
 ## Thanks to the community
 
 ![Austin](./assets/austin.jpg "Austin")
+
+Note:
+* Thank simpletest, wouldn't have Drupal 8 without it
+* Thanks everyone for coming so we can take Drupal testing forwards
 
 ---
 
@@ -28,11 +35,22 @@
 
 ![Fork](./assets/fork.jpg "Fork")
 
+Note:
+* Long ago forked from simpletest
+* Simpletest last release was 23/01/2012
+* Maintainers have to maintain this legacy testing system
+* PHPUnit already adopted for Unit tests
+* KernelTestBase -> Base class for integration tests, can access files and the database, but the entire environment is initially empty.
+* WebTestBase. cURL + SimpleXML + custom code
+
 ---
 
 ## Not a replacement for unit testing
 
 ![Unit testing](./assets/unit.jpg "Unit testing")
+
+Note:
+* 
 
 ---
 
@@ -47,6 +65,9 @@ Unit -> DB -> HTTP -> Functional!!!
 ## Time to get off the island
 
 ![Island](./assets/island.jpg "Island")
+
+Note:
+* BrowserTestBase -> PHPUnit + Mink + custom code
 
 ---
 
