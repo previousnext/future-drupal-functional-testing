@@ -84,6 +84,10 @@ Note:
 
 ![Runner](./assets/runner.jpg "Runner")
 
+Note:
+* PHPUnit is the standard; most frameworks use it (like Zend Framework (1&2), Cake, Agavi, even Symfony is dropping their own Framework in Symfony 2 for phpunit).
+* Already using it in Drupal 8
+
 ---
 
 ## Recognise this syntax
@@ -114,6 +118,9 @@ Note: Actually powered by Mink
 ## PhantomJS
 
 ![Phantom](./assets/phantom.jpg "Phantom")
+
+Note:
+* PhantomJS is a headless WebKit scriptable with a JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.
 
 ---
 
