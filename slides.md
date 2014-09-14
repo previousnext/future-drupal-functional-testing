@@ -86,7 +86,7 @@ Note:
 
 Note:
 * PHPUnit is the standard; most frameworks use it (like Zend Framework (1&2), Cake, Agavi, even Symfony is dropping their own Framework in Symfony 2 for phpunit).
-* Already using it in Drupal 8
+* Already using it in Drupal 8 with unit tests.
 
 ---
 
@@ -107,11 +107,23 @@ Note: Actually powered by Mink
 
 ![Bricks](./assets/bricks.jpg "Bricks")
 
+Note:
+* Two types of browser emulators:
+** Headless browser emulators (ie. Goutte)
+** Browser controllers (ie. Selenium2)
+* Headless browsers send a real HTTP requests against an application and parse the response content. Advantages are simplicity, speed and ability to run it without the need in real browser. But this type of browsers have one big disadvantage - they have no JS/AJAX support. So, you can't test your rich GUI web applications with headless browsers.
+* Browser controllers simulate user interactions on browser and are able to retrieve actual information from current browser page. Selenium and Sahi are two most famous browser controllers. The main advantage of browser controllers usage is the support for JS/AJAX interactions on page. Disadvantage is that such browser emulators require installed browser, extra configuration are usually much slower than headless counterparts.
+* If you choose headless browser emulator - you'll not be able to test your JS/AJAX pages. And if you choose browser controller - your overall test suite will become very slow at some point. So, in real world we should use both! And that's why you need a Mink.
+
 ---
 
 ## Did someone say JavaScript?
 
 ![Javascript](./assets/java.jpg "Javascript")
+
+Note:
+* Mouse manipulations: click, doubleClick, rightClick, mouseOver, focus, blur
+* Drag & Drop: dragTo
 
 ---
 
