@@ -31,23 +31,9 @@ Note:
 
 ---
 
-## The state of Drupal testing
+## What is functional testing
 
-![Fork](./assets/fork.jpg "Fork")
-
-Note:
-* Long ago forked from simpletest (Dries committed it on 21/04/2008)
-* Simpletest last release was 23/01/2012
-* Maintainers have to maintain this legacy testing system
-* PHPUnit already adopted for Unit tests
-* KernelTestBase -> Base class for integration tests, can access files and the database, but the entire environment is initially empty.
-* WebTestBase. cURL + SimpleXML + custom code
-
----
-
-## Not a replacement for unit testing
-
-![Unit testing](./assets/unit.jpg "Unit testing")
+![Unit testing](./assets/unit.jpg "Unit testing") @todo replace graphic
 
 Note:
 * Functional testing is a quality assurance (QA) process and a type of black box testing that bases its test cases on the specifications of the software component under test. Functions are tested by feeding them input and examining the output, and internal program structure is rarely considered (not like in white-box testing). Functional Testing usually describes what the system does.
@@ -60,6 +46,27 @@ Note:
 * https://www.drupal.org/node/394888
 * Tests are written in such a way that they test the interface as a whole instead of testing individual functions or finite pieces of code.
 * Drupal is installed into that environment and the tests are performed. What this means is that the tests always start from the same environment and there is no chance for contamination from other tests. When you write your test it means that you do not have to clean up the environment at the end of each test.
+
+---
+
+## The state of Drupal testing
+
+![Fork](./assets/fork.jpg "Fork")
+
+Note:
+* Long ago forked from simpletest (Dries committed it on 21/04/2008)
+* Simpletest last release was 23/01/2012
+* Maintainers have to maintain this legacy testing system
+* PHPUnit already adopted for Unit tests
+* KernelTestBase -> Base class for integration tests, can access files and the database, but the entire environment is initially empty.
+* WebTestBase. cURL + SimpleXML + custom code
+* 
+
+---
+
+## The state of Drupal testing - Cont...
+
+@todo, Diagram of how a site is spun up, tested and torn down.
 
 ---
 
@@ -81,11 +88,19 @@ Note:
 * Already using it in Drupal 8 with unit tests.
 * PHPUnit handles running tests, reporting and code coverage.
 
+@todo, diagram of frameworks
+
 ---
 
 ## PHPUnit example
 
 TODO: Put some demo PHPUnit code in here.
+
+---
+
+## PHPUnit - Contrib
+
+@todo, get links to contrib projects (parallel and UI)
 
 ---
 
@@ -141,12 +156,49 @@ Note:
 
 Note:
 * PhantomJS is a headless WebKit scriptable with a JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.
+* Packaged in a binary.
+
+---
+
+## Layers
+
+![I can have my cake and eat it too](./assets/cake.png "Layers")
+
+Note:
+* Massive reduction in code in the Browser and Runner layers
+* Can use real browsers in the browser layer
+* 1000+ lines of custom code implementing a Browser. Replaced with using Mink library.
+
+---
+
+## BrowerTestBase
+
+* How it came to be.
+* Mink for browser + PHPUnit for asserts.
 
 ---
 
 ## Show me the code
 
 WE NEED TO WRITE SOME CODE!
+
+---
+
+## Recommendations
+
+* Replace the Runner/Framework with PHPUnit
+* Replace the "Browser" with Mink
+* Agree on a Javascript driver for core. (Please come to the BOF!)
+* Commit along side existing test suite. Start converting AJAX tests in core.
+
+---
+
+## Blockers
+
+* Testing infrastructure.
+** Not easy to swap out run-tests.sh with phpunit
+** Hard to setup PhantomJS on testbot
+* Please help those guys out! #drupal-infrastructure
 
 ---
 
@@ -161,6 +213,12 @@ Link to patch
 * Modernizing testbot: The future of drupal.org automated testing (Wednesday 10:45-11:45)
 * Automated Frontend testing (Wednesday 14:15-15:15)
 * Doing behaviour driven development with behat (Wednesday 15:45-16:45)
+
+---
+
+## BOF
+
+@todo Put our bof session in here.
 
 ---
 
