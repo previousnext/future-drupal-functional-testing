@@ -171,7 +171,7 @@ Note:
 
 ---
 
-## BrowerTestBase
+## BrowserTestBase
 
 * How it came to be.
 * Mink for browser + PHPUnit for asserts.
