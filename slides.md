@@ -21,6 +21,12 @@
 
 ---
 
+## Questions
+
+* Who has written a behat test? @todo, write better one's
+
+---
+
 ## Thanks to the community
 
 ![Austin](./assets/austin.jpg "Austin")
@@ -68,6 +74,11 @@ Note:
 
 @todo, Diagram of how a site is spun up, tested and torn down.
 
+Note:
+* run-tests.sh
+* WebTestBase::setUp() creates test site using Drupal Multisite
+* WebTestBase using cURL + SimpleXML + custom code connects to test site. Secured via User-Agent string
+
 ---
 
 ## Time to get off the island
@@ -94,7 +105,22 @@ Note:
 
 ## PHPUnit example
 
-TODO: Put some demo PHPUnit code in here.
+```
+<?php
+class StackTest extends PHPUnit_Framework_TestCase {
+  public function testPushAndPop() {
+    $stack = array();
+    $this->assertEquals(0, count($stack));
+
+    array_push($stack, 'foo');
+    $this->assertEquals('foo', $stack[count($stack)-1]);
+    $this->assertEquals(1, count($stack));
+
+    $this->assertEquals('foo', array_pop($stack));
+    $this->assertEquals(0, count($stack));
+  }
+}
+```
 
 ---
 
@@ -134,7 +160,21 @@ Note:
 
 ## Mink example
 
-TODO: Put some demo Mink code in here.
+```
+<?php
+$driver = new \Behat\Mink\Driver\GoutteDriver();
+$session = new \Behat\Mink\Session($driver);
+$session->start();
+$session->visit('http://localhost:8080');
+$page = $session->getPage();
+$el = $page->find('css', '#test');
+echo $el->getText(), $el->getAttribute('href'), PHP_EOL;
+$session->clickLink('Contact Us');
+$session->fillField('name', 'John');
+$session->fillField('message', 'Hello Amsterdam');
+$session->pressButton('Email');
+$session->stop();
+```
 
 ---
 
@@ -188,7 +228,7 @@ WE NEED TO WRITE SOME CODE!
 
 * Replace the Runner/Framework with PHPUnit
 * Replace the "Browser" with Mink
-* Agree on a Javascript driver for core. (Please come to the BOF!)
+* Agree on a Javascript driver for core. Then we can start building the "driver" functionality. (Please come to the BOF!)
 * Commit along side existing test suite. Start converting AJAX tests in core.
 
 ---
