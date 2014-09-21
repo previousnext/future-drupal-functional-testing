@@ -63,14 +63,6 @@ Note:
 
 ---
 
-## Time to get smarter about our tests
-
-![Levels](./assets/levels.jpg "Levels")
-
-Unit -> DB -> HTTP -> Functional!!!
-
----
-
 ## Time to get off the island
 
 ![Island](./assets/island.jpg "Island")
