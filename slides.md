@@ -126,7 +126,8 @@ class StackTest extends PHPUnit_Framework_TestCase {
 
 ## PHPUnit - Contrib
 
-@todo, get links to contrib projects (parallel and UI)
+* Parallel testing for PHPUnit https://github.com/brianium/paratest
+* A PHPUnit GUI https://github.com/NSinopoli/VisualPHPUnit
 
 ---
 
@@ -213,8 +214,14 @@ Note:
 
 ## BrowserTestBase
 
-* How it came to be.
+* How it came to be https://www.drupal.org/node/2232861
+* Try to port WebTestBase to Mink https://www.drupal.org/node/2274167#comment-8916585
 * Mink for browser + PHPUnit for asserts.
+
+Note:
+* Relied on decorator and backwards compatibility layer
+* Too many edge cases
+* New plan of attack, start fresh
 
 ---
 
