@@ -12,6 +12,8 @@
 
 ## Nick Schuch
 
+![Nick](./assets/nick.jpg "Nick")
+
 ---
 
 ## Cameron Zemek
@@ -126,8 +128,15 @@ class StackTest extends PHPUnit_Framework_TestCase {
 
 ## PHPUnit - Contrib
 
-* Parallel testing for PHPUnit https://github.com/brianium/paratest
-* A PHPUnit GUI https://github.com/NSinopoli/VisualPHPUnit
+![Nyan](./assets/nyan.gif "Nyan")
+
+---
+
+## PHPUnit - Contrib for real
+
+* **NSinopoli/VisualPHPUnit** - _A PHPUnit GUI_
+* **sebastianbergmann/php-timer** - _Utility class for timing_
+* **brianium/paratest** - _Parallel testing for PHPUnit_
 
 ---
 
