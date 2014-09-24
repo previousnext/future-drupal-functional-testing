@@ -18,8 +18,9 @@
 
 ## Cameron Zemek
 
-* PHP developer for 10 years
-* Drupal/Twitter: grom358
+![Grom](./assets/grom.png "Grom")
+
+* Twitter/Drupal: grom358
 
 ---
 
