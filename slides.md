@@ -209,17 +209,6 @@ Note:
 
 ---
 
-## Layers
-
-![I can have my cake and eat it too](./assets/cake.png "Layers")
-
-Note:
-* Massive reduction in code in the Browser and Runner layers
-* Can use real browsers in the browser layer
-* 1000+ lines of custom code implementing a Browser. Replaced with using Mink library.
-
----
-
 ## BrowserTestBase
 
 * How it came to be https://www.drupal.org/node/2232861
@@ -233,12 +222,23 @@ Note:
 
 ---
 
+## Layers
+
+![I can have my cake and eat it too](./assets/cake.png "Layers")
+
+Note:
+* Massive reduction in code in the Browser and Runner layers
+* Can use real browsers in the browser layer
+* 1000+ lines of custom code implementing a Browser. Replaced with using Mink library.
+
+---
+
 ## Show me the code
 
 ```
 <?php
-
 namespace Drupal\simpletest\Tests;
+
 use Drupal\simpletest\BrowserTestBase;
 
 class BrowserTestBaseTest extends BrowserTestBase {
