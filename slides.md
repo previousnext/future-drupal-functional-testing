@@ -25,7 +25,7 @@
 
 ## Questions
 
-* Who has written a behat test? @todo, write better one's
+Who has written a test using..........?
 
 ---
 
@@ -41,7 +41,7 @@ Note:
 
 ## What is functional testing
 
-![Unit testing](./assets/unit.jpg "Unit testing") @todo replace graphic
+![Unit testing](./assets/functional.jpg "Unit testing")
 
 Note:
 * Functional testing is a quality assurance (QA) process and a type of black box testing that bases its test cases on the specifications of the software component under test. Functions are tested by feeding them input and examining the output, and internal program structure is rarely considered (not like in white-box testing). Functional Testing usually describes what the system does.
@@ -74,7 +74,7 @@ Note:
 
 ## The state of Drupal testing - Cont...
 
-@todo, Diagram of how a site is spun up, tested and torn down.
+![Flow](./assets/flow.jpg "Flow")
 
 Note:
 * run-tests.sh
@@ -100,8 +100,6 @@ Note:
 * PHPUnit is the standard; most frameworks use it (like Zend Framework (1&2), Cake, Agavi, even Symfony is dropping their own Framework in Symfony 2 for phpunit).
 * Already using it in Drupal 8 with unit tests.
 * PHPUnit handles running tests, reporting and code coverage.
-
-@todo, diagram of frameworks
 
 ---
 
@@ -236,7 +234,36 @@ Note:
 
 ## Show me the code
 
-WE NEED TO WRITE SOME CODE!
+```
+<?php
+
+/**
+ * @file
+ * Definition of Drupal\simpletest\Tests\BrowserTestBaseTest.
+ */
+
+namespace Drupal\simpletest\Tests;
+
+use Drupal\simpletest\BrowserTestBase;
+
+/**
+ * Tests BrowserTestBase functionality.
+ *
+ * @group modern
+ */
+class BrowserTestBaseTest extends BrowserTestBase {
+
+  /**
+   * Tests basic page test.
+   */
+  function testGoTo() {
+    // Go to the front page and make sure we can see some text.
+    $this->drupalGet('');
+    $this->assertPageTextContains("Enter your Drupal username.");
+  }
+
+}
+```
 
 ---
 
@@ -252,15 +279,15 @@ WE NEED TO WRITE SOME CODE!
 ## Blockers
 
 * Testing infrastructure.
-** Not easy to swap out run-tests.sh with phpunit
-** Hard to setup PhantomJS on testbot
+ * Not easy to swap out run-tests.sh with phpunit
+ * Hard to setup PhantomJS on testbot
 * Please help those guys out! #drupal-infrastructure
 
 ---
 
 ## How do we get this into Drupal 8 core
 
-Link to patch
+https://www.drupal.org/node/2232861
 
 ---
 
@@ -274,7 +301,8 @@ Link to patch
 
 ## BOF
 
-@todo Put our bof session in here.
+* **Time**: 2:15PM - 3:15PM
+* **Room**: G001 · Lingotek
 
 ---
 
