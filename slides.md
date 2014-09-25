@@ -257,19 +257,19 @@ class BrowserTestBaseTest extends BrowserTestBase {
 
 ---
 
+## How do we get this into Drupal 8 core
+
+* https://github.com/nickschuch/drupal-phpunit-mink
+* https://www.drupal.org/node/2232861
+
+---
+
 ## Blockers
 
 * Testing infrastructure.
  * Not easy to swap out run-tests.sh with phpunit
  * Hard to setup PhantomJS on testbot
 * Please help those guys out! #drupal-infrastructure
-
----
-
-## How do we get this into Drupal 8 core
-
-* Quickstart - https://github.com/nickschuch/drupal-phpunit-mink
-* D.O Issue - https://www.drupal.org/node/2232861
 
 ---
 
