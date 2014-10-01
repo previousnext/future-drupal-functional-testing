@@ -140,8 +140,12 @@ Note:
 ```
 Scenario: The content page exists
   Given I am logged in as a user with the "administrator" role
-  When I go to "admin/content"
+  When I go to "contact-us"
   Then the response status code should be 200
+  Then I enter "Cameron" for "name"
+  And I enter "grom@pnx.me" for "mail"
+  And I press "Send"
+  Then I should see "Thanks for contacting us"
 ```
 
 Note: Actually powered by Mink
