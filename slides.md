@@ -10,7 +10,7 @@
 
 ---
 
-## Nick Schuch
+## NICK_SCHUCH/@WESOME1989
 
 ![Nick](./assets/nick.jpg "Nick")
 
@@ -35,8 +35,9 @@ Who has written a test using..........?
 ![Austin](./assets/austin.jpg "Austin")
 
 Note:
-* Thank simpletest, wouldn't have Drupal 8 without it
+* Thankyou to the maintainers / coders
 * Thanks everyone for coming so we can take Drupal testing forwards
+* Thankyou to Simpletest
 
 ---
 
@@ -46,7 +47,11 @@ Note:
 
 Note:
 * Full stack testing
-* Smoke, Sanity, Regression, Usability, High level
+* If we were testing this reveal.js application...
+* Types
+ * Smoke - Wide array of functionality.
+ * Sanity - Brief run of functionality.
+ * Regression - Write it when something breaks.
 
 ---
 
@@ -55,7 +60,7 @@ Note:
 ![Fork](./assets/fork.jpg "Fork")
 
 Note:
-* Long ago forked from simpletest (Dries committed it on 21/04/2008)
+* Forked (Dries committed it on 21/04/2008)
 * Simpletest last release was 23/01/2012
 * Maintainers have to maintain this legacy testing system
 * PHPUnit already adopted for Unit tests
@@ -81,6 +86,7 @@ Note:
 
 Note:
 * Follow our current methodologies in core
+ * Dries mention in his keynote
 * BrowserTestBase -> PHPUnit + Mink + custom code
 
 ---
@@ -90,7 +96,7 @@ Note:
 ![Runner](./assets/runner.jpg "Runner")
 
 Note:
-* PHPUnit is the standard; most frameworks use it (like Zend Framework (1&2), Cake, Agavi, even Symfony is dropping their own Framework in Symfony 2 for phpunit).
+* PHPUnit is the standard; Zend Framework, Cake, even Symfony is dropping their own Framework in Symfony 2 for phpunit).
 * Already using it in Drupal 8 with unit tests.
 * PHPUnit handles running tests, reporting and code coverage.
 
